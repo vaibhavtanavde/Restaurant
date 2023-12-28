@@ -8,6 +8,8 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
 import {RouterModule} from '@angular/router';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { FoodpageComponent } from './foodpage/foodpage.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import {RouterModule} from '@angular/router';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    TagsComponent
+    TagsComponent,
+    CartPageComponent,
+    FoodpageComponent
   ],
   imports: [
     RouterModule,
