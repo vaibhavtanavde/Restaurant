@@ -13,12 +13,14 @@ export class FoodService {
 
   }
 
-
-
   getAllFoodByTag(tag: string): Foods[]{
     return tag == "All" ?
       this.getAll(): this.getAll().filter(food => food.tags?.
       includes(tag));
+  }
+
+  getAllFoodsBySearchTerm(searchTerm:string){
+    return this.getAll().filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()))
   }
 
   getAllTag():Tag[]{

@@ -1,5 +1,4 @@
 <div>
-    <input type="text" placeholder="Search Food from Vaibhav's © Food Corner"
-    [value]="searchItem">
-    <button (click)="search()">Search</button>
+    <input #s type="text" placeholder="Search Food from Vaibhav's © Food Corner" (keyup.enter)="search(s.value)" [value]="searchTerm"/>
+    <button (click)="search(s.value)">Search</button>
 </div>
